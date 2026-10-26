@@ -1,0 +1,52 @@
+{
+  "task": "model_a_t3h_storm_binary_g1",
+  "storm_definition": "Kp >= 5 (G1+)",
+  "features": [
+    "bz_gsm",
+    "speed",
+    "density",
+    "newell",
+    "rect_v",
+    "pressure"
+  ],
+  "winner": "GRU",
+  "best_tau": 0.7300000000000002,
+  "val_storm_f1": {
+    "MLP": 0.332378223495702,
+    "1D-CNN": 0.4391025641025641,
+    "GRU": 0.4756955059614797
+  },
+  "val_storm_f1_baselines": {
+    "climatology": 0.0,
+    "persistence": 0.48096192384769537
+  },
+  "test_storm_f1": 0.5040693095300603,
+  "test_storm_f1_persistence": 0.512434554973822,
+  "test_report": {
+    "non-storm": {
+      "precision": 0.9910802619387867,
+      "recall": 0.9794977650856718,
+      "f1-score": 0.9852549742020591,
+      "support": 64432.0
+    },
+    "storm": {
+      "precision": 0.4208680403331872,
+      "recall": 0.6282722513089005,
+      "f1-score": 0.5040693095300603,
+      "support": 1528.0
+    },
+    "accuracy": 0.9713614311704063,
+    "macro avg": {
+      "precision": 0.7059741511359869,
+      "recall": 0.8038850081972861,
+      "f1-score": 0.7446621418660597,
+      "support": 65960.0
+    },
+    "weighted avg": {
+      "precision": 0.9778709794249396,
+      "recall": 0.9713614311704063,
+      "f1-score": 0.9741080412787902,
+      "support": 65960.0
+    }
+  }
+}
